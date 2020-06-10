@@ -1,0 +1,18 @@
+<!-- <form action="/ask" >
+  <input type="text" name="???">
+  <input type="submit" value="Ask!">
+</form> -->
+<h1>Stupid Coach</h1>
+
+<div class="question">
+  <h3> <%= params[:question] %> </h3>
+  <i> -You </i>
+</div>
+
+<div class="answer">
+  <h3> <strong><%= @answer  %></strong> </h3>
+  <i> -Your coach </i>
+</div>
+
+<br>
+<%= link_to "Ask a new question", ask_path %>
